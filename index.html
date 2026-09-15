@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Art Through Time | An Interactive Journey</title>
+<meta name="description" content="An interactive digital timeline exploring 4,500 years of Indian art, with virtual replicas of key artifacts from every major period.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  /* Defined here (not script.js) so it exists before any image on the
+     page can fail — image loading can start before the closing script tag runs. */
+  function imgFallback(imgEl) {
+    var wrap = imgEl.closest(".media");
+    if (wrap) wrap.classList.add("img-error");
+  }
+</script>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-mark">IA</span>
+      <span class="logo-text">Indian Art <em>Through Time</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#timeline" class="nav-link">Timeline</a>
+      <a href="#artifacts" class="nav-link">Artifacts</a>
+      <a href="#explore" class="nav-link">Explore</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Indian Heritage &bull; Digital Archive</p>
+      <h1 class="hero-title">Indian Art<br>Through Time</h1>
+      <p class="hero-sub">Explore the evolution of Indian art through civilizations, dynasties, traditions and masterpieces.</p>
+      <div class="hero-actions">
+        <a href="#timeline" class="btn btn-primary">Explore Timeline</a>
+        <a href="#about" class="btn btn-secondary">About the Project</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="floating-card card-1">
+        <div class="media" data-letter="D">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dancing%20girl%20of%20Mohenjo-daro.jpg?width=400" alt="" onerror="imgFallback(this)">
+        </div>
+        <span class="card-tag">Dancing Girl, c. 2500 BCE</span>
+      </div>
+      <div class="floating-card card-2">
+        <div class="media" data-letter="N">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shiva%20as%20the%20Lord%20of%20Dance%20LACMA%20edit.jpg?width=400" alt="" onerror="imgFallback(this)">
+        </div>
+        <span class="card-tag">Nataraja, c. 11th c. CE</span>
+      </div>
+      <div class="floating-card card-3">
+        <div class="media" data-letter="T">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taj%20Mahal%2C%20Agra%2C%20India%20edit3.jpg?width=400" alt="" onerror="imgFallback(this)">
+        </div>
+        <span class="card-tag">Taj Mahal, 1653 CE</span>
+      </div>
+      <div class="era-badge">2500 BCE — PRESENT</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll to explore">
+    <span>Scroll to Explore</span>
+    <span class="scroll-arrow">&darr;</span>
+  </a>
+</section>
+
+<!-- ============ TEAM CREDIT ============ -->
+<div class="team-credit">
+  <div class="section-inner team-credit-inner">
+    <span class="team-label">Team&nbsp;7</span>
+    <ul class="team-members">
+      <li><span class="tm-name">Ayush Saxena</span><span class="tm-id">RA2411003010179</span></li>
+      <li><span class="tm-name">Aditi Thakur</span><span class="tm-id">RA2411003010186</span></li>
+      <li><span class="tm-name">Harshvardhan Gupta</span><span class="tm-id">RA2411003010182</span></li>
+      <li><span class="tm-name">Ujan Roy Sarkar</span><span class="tm-id">RA2411003010189</span></li>
+      <li><span class="tm-name">Hemish Jain</span><span class="tm-id">RA2411003010147</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ ABOUT / INTRO ============ -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">About the Project</p>
+    <h2 class="section-title reveal">Art as a Record of Civilization</h2>
+    <p class="about-text reveal">
+      Indian art has evolved continuously across more than four and a half millennia, from the quiet
+      geometry of Indus Valley seals to the bold canvases of contemporary painters. Each period reflects
+      the religion, society, technology, architecture, trade and cultural exchange of its time &mdash;
+      making art one of the most reliable records we have of how civilization itself has changed. This
+      project traces that journey through key artifacts, each a small window into the world that made it.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <span class="stat-number" data-target="4500" data-suffix="+">0</span>
+        <span class="stat-label">Years of artistic heritage</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-number" data-target="8" data-suffix="">0</span>
+        <span class="stat-label">Major periods explored</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-number" data-target="20" data-suffix="+">0</span>
+        <span class="stat-label">Artifacts &amp; masterpieces</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="timeline-section" id="timeline">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal light">The Timeline</p>
+    <h2 class="section-title reveal light">Eight Periods, One Continuous Story</h2>
+    <p class="section-lead reveal light">Select a period below to reveal its historical context and defining artifacts.</p>
+
+    <div class="timeline-track" id="timelineTrack" role="tablist" aria-label="Historical periods">
+      <!-- timeline nodes injected by script.js -->
+    </div>
+
+    <div class="period-panel" id="periodPanel">
+      <!-- period detail injected by script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTIFACTS ============ -->
+<section class="artifacts-section" id="artifacts">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">The Collection</p>
+    <h2 class="section-title reveal">Explore Artifacts</h2>
+    <p class="section-lead reveal">Search or filter the collection to find a specific object, period or place.</p>
+
+    <div class="filter-bar reveal">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search artifacts, periods or locations..." aria-label="Search artifacts">
+      </div>
+      <div class="filter-buttons" id="filterButtons" role="group" aria-label="Filter artifacts by period">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="indus">Indus</button>
+        <button class="filter-btn" data-filter="mauryan">Mauryan</button>
+        <button class="filter-btn" data-filter="gupta">Gupta</button>
+        <button class="filter-btn" data-filter="medieval">Medieval</button>
+        <button class="filter-btn" data-filter="mughal">Mughal</button>
+        <button class="filter-btn" data-filter="rajput">Rajput</button>
+        <button class="filter-btn" data-filter="colonial">Colonial</button>
+        <button class="filter-btn" data-filter="modern">Modern</button>
+      </div>
+    </div>
+
+    <p class="results-count" id="resultsCount"></p>
+    <div class="artifacts-grid" id="artifactsGrid">
+      <!-- artifact cards injected by script.js -->
+    </div>
+    <p class="no-results" id="noResults" hidden>No artifacts match your search. Try a different keyword.</p>
+  </div>
+</section>
+
+<!-- ============ MAP / GEOGRAPHY ============ -->
+<section class="explore-section" id="explore">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Geography</p>
+    <h2 class="section-title reveal">Where Art Was Created</h2>
+    <p class="section-lead reveal">A stylised map of key sites across the subcontinent. Click a marker to learn more.</p>
+
+    <div class="map-wrap reveal">
+      <svg class="india-map" viewBox="0 0 400 500" role="img" aria-label="Stylised map of India with artifact site markers">
+        <path class="map-outline" d="M120,40 L160,32 L205,42 L235,68 L252,108 L272,148 L302,188 L322,228 L302,258 L272,268 L260,308 L242,358 L222,408 L202,450 L186,472 L170,450 L164,410 L150,370 L130,330 L110,290 L90,250 L68,210 L58,170 L70,128 L86,88 L100,58 Z"/>
+        <g id="mapMarkers"><!-- markers injected by script.js --></g>
+      </svg>
+      <div class="map-tooltip" id="mapTooltip" hidden></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTISTIC EVOLUTION ============ -->
+<section class="evolution-section" id="evolution">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal light">The Big Picture</p>
+    <h2 class="section-title reveal light">How Indian Art Evolved</h2>
+
+    <div class="evolution-track">
+      <div class="evolution-stage reveal">
+        <span class="stage-num">01</span>
+        <h3>Symbolic</h3>
+        <p>Early art used seals, figurines and abstract motifs to communicate meaning long before script was deciphered.</p>
+      </div>
+      <div class="evolution-stage reveal">
+        <span class="stage-num">02</span>
+        <h3>Religious</h3>
+        <p>Buddhist and Hindu patronage turned sculpture and painting into vehicles for spiritual teaching.</p>
+      </div>
+      <div class="evolution-stage reveal">
+        <span class="stage-num">03</span>
+        <h3>Architectural</h3>
+        <p>Temples became total works of art, uniting structure, sculpture and symbolism into sacred space.</p>
+      </div>
+      <div class="evolution-stage reveal">
+        <span class="stage-num">04</span>
+        <h3>Courtly</h3>
+        <p>Royal ateliers produced refined miniature painting reflecting imperial and regional courtly taste.</p>
+      </div>
+      <div class="evolution-stage reveal">
+        <span class="stage-num">05</span>
+        <h3>Colonial</h3>
+        <p>Academic realism arrived with colonial schools, prompting a nationalist revival of native technique.</p>
+      </div>
+      <div class="evolution-stage reveal">
+        <span class="stage-num">06</span>
+        <h3>Modern</h3>
+        <p>Independence-era artists absorbed global modernism while forging distinctly Indian personal styles.</p>
+      </div>
+      <div class="evolution-stage reveal">
+        <span class="stage-num">07</span>
+        <h3>Contemporary</h3>
+        <p>Today's artists work across global media and markets while still drawing on this long visual heritage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DID YOU KNOW ============ -->
+<section class="facts-section" id="facts">
+  <div class="section-inner narrow">
+    <p class="section-eyebrow reveal">Did You Know?</p>
+    <div class="fact-card reveal">
+      <p class="fact-mark">&ldquo;</p>
+      <p class="fact-text" id="factText">Loading fact...</p>
+      <button class="btn btn-primary" id="nextFactBtn">Next Fact &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REFERENCES ============ -->
+<section class="references-section" id="references">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Sources &amp; References</p>
+    <h2 class="section-title reveal">Where This Content Comes From</h2>
+    <p class="section-lead reveal">Historical information is drawn from established museum and heritage institutions. Images, where used, are sourced from Wikimedia Commons under public-domain or freely licensed terms.</p>
+    <ul class="references-list reveal">
+      <li><strong>National Museum, New Delhi</strong> &mdash; nationalmuseumindia.gov.in</li>
+      <li><strong>Archaeological Survey of India</strong> &mdash; asi.nic.in</li>
+      <li><strong>UNESCO World Heritage Centre</strong> &mdash; whc.unesco.org</li>
+      <li><strong>The British Museum</strong> &mdash; britishmuseum.org</li>
+      <li><strong>The Metropolitan Museum of Art</strong> &mdash; metmuseum.org</li>
+      <li><strong>Victoria and Albert Museum</strong> &mdash; vam.ac.uk</li>
+      <li><strong>Google Arts &amp; Culture</strong> &mdash; artsandculture.google.com</li>
+      <li><strong>Wikimedia Commons</strong> &mdash; commons.wikimedia.org (public-domain images)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <p class="footer-title">Indian Art Through Time</p>
+      <p class="footer-text">An interactive educational exploration of India's artistic heritage.</p>
+      <p class="footer-note">Created as an academic project &bull; <a href="#references">Sources &amp; References</a></p>
+    </div>
+    <div class="footer-links">
+      <a href="#timeline">Timeline</a>
+      <a href="#artifacts">Artifacts</a>
+      <a href="#timeline">Periods</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ ARTIFACT MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close artifact viewer">&times;</button>
+    <div class="modal-body">
+      <div class="modal-viewer">
+        <p class="viewer-label">Virtual Artifact Viewer</p>
+        <div class="viewer-stage">
+          <div class="media modal-media" id="modalMediaWrap" data-letter="A">
+            <img id="modalImage" src="" alt="" onerror="imgFallback(this)">
+          </div>
+        </div>
+        <div class="viewer-controls">
+          <button id="zoomInBtn" aria-label="Zoom in">+</button>
+          <button id="zoomOutBtn" aria-label="Zoom out">&minus;</button>
+          <button id="rotateBtn" aria-label="Rotate artifact">&#8635;</button>
+          <button id="resetBtn" aria-label="Reset view">Reset</button>
+        </div>
+      </div>
+      <div class="modal-info">
+        <h3 id="modalTitle">Artifact Name</h3>
+        <p class="modal-period" id="modalPeriod">Period</p>
+        <dl class="modal-meta">
+          <div><dt>Date</dt><dd id="modalDate"></dd></div>
+          <div><dt>Location</dt><dd id="modalLocation"></dd></div>
+          <div><dt>Material</dt><dd id="modalMaterial"></dd></div>
+        </dl>
+
+        <div class="modal-block">
+          <h4>About the Artifact</h4>
+          <p id="modalDescription"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Historical Context</h4>
+          <p id="modalContext"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Why It Matters</h4>
+          <p id="modalSignificance"></p>
+        </div>
+        <div class="modal-block modal-quickfact">
+          <h4>Quick Fact</h4>
+          <p id="modalFact"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
